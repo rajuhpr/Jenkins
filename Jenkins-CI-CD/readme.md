@@ -115,6 +115,9 @@
             - Below Ref Path
               /var/lib/jenkins/workspace/Sample_maven_build/webapp/target
 
-        
+
+  ### Step 5: Deploy .war build file on Doker container
+  
+
           
           
