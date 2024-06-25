@@ -1,5 +1,7 @@
 ##  Deploy Java project on Docker container using Jenkins CI-CD
 
+![image](https://github.com/rajuhpr/Jenkins/assets/142870952/c7952c7a-e421-4359-bf1f-1eed8fa54682)
+
 ### Step 1: Create a Linux EC2 and install java.
   ```
     - sudo dnf update  
