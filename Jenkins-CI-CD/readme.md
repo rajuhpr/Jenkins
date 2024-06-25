@@ -1,6 +1,12 @@
 ##  Deploy Java project on Docker container using Jenkins CI-CD
 
+##### Deploy on tomcat application server: 
 ![image](https://github.com/rajuhpr/Jenkins/assets/142870952/c7952c7a-e421-4359-bf1f-1eed8fa54682)
+
+#### Deploy on Docker container:
+
+![image](https://github.com/rajuhpr/Jenkins/assets/142870952/668c9d01-1143-42f4-b6e7-62fb26f3b32e)
+
 
 ### Step 1: Create a Linux EC2 and install java.
   ```
