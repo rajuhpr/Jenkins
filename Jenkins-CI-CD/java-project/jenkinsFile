@@ -2,8 +2,9 @@ pipeline {
   agent none
   stages {
     stage('Git-checkout') {
-      echo 'echo passed!'
-
+      steps {
+        sh 'echo passed'
+      }
     }
     stage('maven build') {
       agent {
