@@ -1,21 +1,18 @@
 pipeline {
-    agent none
-    stages {
-        stage('Back-end') {
-            agent {
-                docker { image 'maven:3.9.8-eclipse-temurin-21-alpine' }
-            }
-            steps {
-                sh 'mvn --version'
-            }
-        }
-        stage('Front-end') {
-            agent {
-                docker { image 'node:20.15.0-alpine3.20' }
-            }
-            steps {
-                sh 'node --version'
-            }
-        }
+  agent {
+    docker { image 'node:16-alpine' }
+  }
+  stages {
+    stage('Git-checkout') {
+      steps {
+        sh 'echo passed'
+      }
     }
+    stage('maven build') {
+      steps {
+        sh 'cd Jenkins-CI-CD/java-project && mvn clean package'
+        echo 'maven build works!'
+      }
+    }
+  }
 }
